@@ -1,0 +1,25 @@
+button{
+    background: none;
+    border: 1px solid var(--accent-dark-color);
+    box-shadow: 5px 5px 0px var(--accent-dark-color);
+    padding: 10px;
+    color: var(--primary-color);
+    margin-top: 20px;
+    font-weight: 900;
+    width: 300px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    box-shadow: 5px 5px 0px var(--primary-dark-color);
+    border: none;
+}
+
+button:hover h2{
+    color: var(--accent-color);
+}
+
+button:focus{
+    outline: 0;
+}
