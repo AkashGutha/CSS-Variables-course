@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS variables</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./button.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>CSS</h1>
+      <h3>Variables</h3>
+    </div>
+    <div class="content">
+      <ul class="box-list">
+        <li>
+          <p class="heading">Box 1</p>
+          <p class="sub-heading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fuga explicabo quisquam beatae tenetur
+            inventore. Sapiente
+            id consequuntur ipsa, modi quisquam alias dolores harum necessitatibus aliquid aspernatur, doloremque
+            cumque eligendi.
+          </p>
+        </li>
+        <li>
+          <p class="heading">Box 2</p>
+          <p class="sub-heading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, odio, sunt obcaecati exercitationem,
+            doloribus placeat
+            perspiciatis at consectetur excepturi iste cupiditate provident ipsum laboriosam? Suscipit, veritatis
+            deserunt. Nostrum, rerum perferendis!
+          </p>
+        </li>
+        <li>
+          <p class="heading">Box 3</p>
+          <p class="sub-heading">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et natus dolor earum numquam aliquid
+            necessitatibus ut, ad alias,
+            repellendus vero sunt a quidem, error rem asperiores ducimus! Autem, ea vel!
+          </p>
+        </li>
+        <button onclick="changeTheme()">
+          <h2>Toggle High contrast</h2>
+        </button>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function changeTheme() {
+      const theme = document.getElementsByTagName("html")[0].getAttribute("data-theme")
+      document.getElementsByTagName("html")[0].setAttribute("data-theme",
+        theme ? "" : "high-contrast"
+      )
+    }
+  </script>
+
+</body>
+
+</html>

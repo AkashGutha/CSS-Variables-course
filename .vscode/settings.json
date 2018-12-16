@@ -1,0 +1,13 @@
+{
+    "editor.lineNumbers": "off",
+    "editor.colorDecorators": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.renderLineHighlight": "none",
+    "editor.folding": false,
+    "scm.diffDecorationsGutterWidth": 1,
+    "scm.diffDecorations": "none",
+    "editor.renderIndentGuides": false,
+    "editor.smoothScrolling": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 60
+}
